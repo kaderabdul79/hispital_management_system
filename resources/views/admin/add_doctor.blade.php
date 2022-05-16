@@ -29,7 +29,42 @@
       <!-- partial -->
       @include('admin.navbar')
         <!-- partial -->
-      @include('admin.body')
+       <div class="container-fluid page-body-wrapper">
+            <h1>Add Doctor</h1>
+            <div class="w-75 text-center">
+            <div class="mt-5">
+                <label for="name">Name</label>
+                <input style="color:black" type="text" name="name" id="">
+            </div>
+            <div class="mt-5">
+                <label for="">Phone Number</label>
+                <input style="color:black" type="number" name="phone" id="">
+            </div>
+            <div class="mt-5">
+                <label for="">Speciality</label>
+                <select style="color:black" name="speciality" id="">
+                    <option value="select">select</option>
+                    <option value="skin">skin</option>
+                    <option value="head">head</option>
+                    <option value="teeth">teeth</option>
+                    <option value="body">body</option>
+                </select>
+            </div>
+            <div class="mt-5">
+                <label for="">Room no.</label>
+                <input style="color:black" type="number" name="room" id="">
+            </div>
+            <div class="mt-5">
+                <label for="">Doctor Image</label>
+                <input style="color:black" type="file" name="file" id="">
+            </div>
+
+            <div class="">
+                <a class="btn btn-primary" href="">Submit</a>
+            </div>
+            
+        </div>
+       </div>    
         <!-- main-panel ends -->
       </div>
       <!-- page-body-wrapper ends -->
