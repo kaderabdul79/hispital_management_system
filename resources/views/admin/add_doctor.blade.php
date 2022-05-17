@@ -31,7 +31,10 @@
         <!-- partial -->
        <div class="container-fluid page-body-wrapper">
             <h1>Add Doctor</h1>
-            <div class="w-75 text-center">
+
+            <form enctype="multipart/form-data" action="{{url('upload_doctor')}}" method="POST">
+                @csrf
+
             <div class="mt-5">
                 <label for="name">Name</label>
                 <input style="color:black" type="text" name="name" id="">
@@ -56,14 +59,12 @@
             </div>
             <div class="mt-5">
                 <label for="">Doctor Image</label>
-                <input style="color:black" type="file" name="file" id="">
+                <input type="file" style="color:black" required name="image">
             </div>
 
-            <div class="">
-                <a class="btn btn-primary" href="">Submit</a>
-            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
             
-        </div>
+        </form>
        </div>    
         <!-- main-panel ends -->
       </div>
